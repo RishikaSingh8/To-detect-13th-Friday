@@ -1,0 +1,8 @@
+import datetime
+def has_13th_friday(month,year):
+    date=datetime.date(year,month,13)
+    return date.weekday()==4
+month=int(input("Enter month in number (eg.1)"))
+year=int(input("Enter year"))
+result=has_13th_friday(month,year)
+print(result)
